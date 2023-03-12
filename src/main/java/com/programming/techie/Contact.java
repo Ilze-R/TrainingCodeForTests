@@ -15,6 +15,10 @@ public class Contact {
         return firstName;
     }
 
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
     public String getLastName() {
         return lastName;
     }

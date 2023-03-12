@@ -8,12 +8,12 @@ public class ContactManager {
 
     Map<String, Contact> contactList = new ConcurrentHashMap<String, Contact>();
 
-    public void addContact(String firstName, String lastName, String phoneNumber) {
-        Contact contact = new Contact(firstName, lastName, phoneNumber);
-        validateContact(contact);
-        checkIfContactAlreadyExist(contact);
-        contactList.put(generateKey(contact), contact);
-    }
+        public void addContact(String firstName, String lastName, String phoneNumber) {
+            Contact contact = new Contact(firstName, lastName, phoneNumber);
+            validateContact(contact);
+            checkIfContactAlreadyExist(contact);
+            contactList.put(generateKey(contact), contact);
+        }
 
     public Collection<Contact> getAllContacts() {
         return contactList.values();
